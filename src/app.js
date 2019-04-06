@@ -7,6 +7,8 @@ const geocode = require("./utils/geocode");
 
 const app = express();
 
+const port = process.env.PORT || 3000
+
 // console.log(__dirname);
 // console.log(__filename);
 // console.log(path.join(__dirname, "../public"));
@@ -125,7 +127,7 @@ app.get("*", (req, res) => {
 
 
 
-const port = process.env.PORT || 3000
+
 
 app.listen(port, () =>{
   console.log("Server is running");
